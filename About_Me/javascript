@@ -1,0 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const homeBtn = document.getElementById("homeBtn");
+
+  homeBtn.addEventListener("click", function () {
+    console.log("Home button clicked! Redirecting to home page...");
+
+    // Optional: change the button text briefly to show something's happening
+    homeBtn.textContent = "Going Home...";
+
+    // Delay the redirect a little for effect (e.g., 300ms)
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 300);
+  });
+});
